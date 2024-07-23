@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="join-screen">
+            <h2 class="h2-style">HomeKit</h2>
+                <form id="form-input">
+                <!-- <label>Email</label> -->
+                <input id="input-email" class="decoration" type="email" placeholder="e-mail" required>
+                <!-- <label>Password</label> -->
+                <input id="input-password" class="decoration" type="password" placeholder="password" required>
+                <button type="submit" id="button-login">Login</button>
+            </form>
+            <button class="decoration" type="button" id="toRegister">Register</button>
+        </div>
+
+        <div class="register-screen noActive">
+            <h2 class="h2-style">HomeKit</h2>
+                <form id="form-register">
+                <!-- <label>Email</label> -->
+                <input id="reg-email" class="decoration" type="email" placeholder="e-mail" required>
+                <!-- <label>Password</label> -->
+                <input id="reg-password" class="decoration" type="password" placeholder="password" required>
+                <button class="decoration" type="submit" id="button-reg">Register</button>
+            </form>
+            <button class="decoration" type="button" id="toLogin">Login</button>
+        </div>
+
+        <div class="shop-screen noActive">
+            <!-- <div>esempio@yahoo.it</div> -->
+            <!-- <div>esempio2@yahoo.it</div> -->
+            <div id="sensors-container">
+                    <!-- <div class="sensor"> -->
+                    <!-- <div class="name">Sensore</div> -->
+                    <!-- <div class="type">Fumo</div> -->
+                    <!-- <div class="time">1ms</div> -->
+                    <!-- <button class="elimina">x</button> -->
+                    <!-- </div> -->
+
+                    <!-- <div class="sensor"> -->
+                        <!-- <div class="name">Sensore</div> -->
+                        <!-- <div class="type">Fumo</div> -->
+                        <!-- <div class="time">1ms</div> -->
+                        <!-- <button class="elimina">x</button> -->
+                    <!-- </div> -->
+            </div>
+            <form id="form-sensore">
+                <input class="decoration" id="nome" type="text" placeholder="Nome sensore">
+                <input class="decoration" id="tipo" type="text" placeholder="Tipo sensore">
+                <input class="decoration" id="numero" type="number">
+                <button class="decoration" type="submit" id="inserisci">+</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
