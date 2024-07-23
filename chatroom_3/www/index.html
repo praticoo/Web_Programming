@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="join-screen">
+        <h1 id="title">PratiChat</h1>
+        <input id="input-name" autocomplete="off" type="text" autofocus="true">
+        <button id="login">Login</button>
+        </div>
+
+        <div class="chat-screen noActive">
+            <div class="header">
+                <h2>PratiChat</h2>
+                <div class="button-container">
+                <button id="user-online">Online</button>
+                <button id="exit-user">Exit</button>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message my-message">
+                    <!-- <div> -->
+                        <!-- <div class="name">You</div> -->
+                        <!-- <div style="text-align: end;" class="text">Hi</div> -->
+                        <!-- <div style="text-align: end;" class="hour">8:21</div> -->
+                    <!-- </div> -->
+                </div>
+
+                <!-- <div class="message update">Fefe joined the chat</div> -->
+
+                <!-- <div class="message other-message"> -->
+                    <!-- <div> -->
+                        <!-- <div class="name">Fefe</div> -->
+                        <!-- <div class="text">Hi</div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>
+            <div class="footer">
+                <input type="text" autocomplete="off" autofocus="true" id="input-text">
+                <button class="send-message">Send</button>
+            </div>
+        </div>
+
+        <div class="online-screen noActive">
+            <div class="header">
+            <h2>Online</h2>
+            <button id="button-back">Back</button>
+            </div>
+            <div class="list-online">
+                <!-- <div class="utente-online">pratico</div> -->
+                <!-- <div class="utente-online">fefe</div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
