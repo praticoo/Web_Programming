@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+<body>
+    <div class="terminal resizable">
+        <div class="header">
+            <div class="bar__buttons">
+                <button class="bar__button bar__button--exit">&#10005;</button>
+                <button class="bar__button bar__button--hide">&#9472;</button>
+                <button class="bar__button bar__button--maximize">&#9723;</button>
+            </div>
+            <div class="bar__user">patri@MSI: ~</div>
+        </div>
+        <div class="output"></div>
+        <div contenteditable="true" class="prompt-text" autofocus="true" spellcheck="false">&nbsp;</div>
+        </div>
+    </div>
+
+    <div class="icon">
+        <img src="./assets/img/iosterminalicon.jpg">
+        <span class="firma">Terminal</span>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

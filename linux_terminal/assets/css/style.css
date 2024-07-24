@@ -1,0 +1,138 @@
+@font-face {
+    font-family: miol;
+    src: url(../fonts/Miology.otf); 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(30deg, #8e347e 0%, goldenrod 50%, #2b4f8b 100%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: miol;
+}
+
+.terminal {
+    display: none;
+    position: absolute;
+    width: 560px;
+    height: 420px;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(12, 3, 16, 0.9);
+    z-index: 2;
+}
+
+.terminal.resizable {
+    min-width: 300px;
+    min-height: 70px;
+    max-width: 100%;
+    max-height: 100%;
+    resize: both;
+    overflow: auto;
+}
+
+.terminal > .header {
+    position: sticky;
+    top: 0;
+    /*L'header rimane fisso quando scorro in basso*/
+    padding: 3px;
+    background: linear-gradient(#504b45 0%, rgb(49, 46, 46) 100%);
+}
+
+.header .bar__buttons {
+    display: inline-block;
+}
+
+.bar__buttons .bar__button {
+    color: whitesmoke;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 2px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.header .bar__user {
+    display: inline-block;
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 20px;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.bar__button--exit {
+    margin-left: 5px;
+    background: #8e347e;
+}
+
+.bar__button--hide {
+    background: goldenrod;
+}
+
+.bar__button--maximize {
+    background: #2b4f8b;
+}
+
+.terminal > .output {
+    padding: 5px;
+    color: #d5d0ce;
+    font-size: 22px;
+    cursor: default;
+    word-wrap: break-word;
+}
+
+.terminal > .prompt-text { 
+    outline: none;
+    color: #d5d0ce;
+    padding: 5px;
+    font-size: 22px;
+    word-wrap: break-word;
+}
+
+.terminal .prompt-text::before {
+    content: "patri@MSI:~$";
+    margin-right: 4px;
+    color: gold;
+}
+
+.icon {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.icon > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    z-index: 1;
+}
+
+.icon > .firma {
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    color: whitesmoke;
+    border: 0;
+    cursor: default;
+}
+
+span {
+    color: gold;
+}
